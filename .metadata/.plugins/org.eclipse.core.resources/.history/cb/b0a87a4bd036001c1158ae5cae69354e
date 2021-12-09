@@ -1,0 +1,22 @@
+package com.iciciloan.carloans;
+
+public interface Rbi {
+	
+	int x = 100;
+	
+	public void withdrawl();
+	public void deposit();
+	
+	public static void main(String[] args) {
+		//we cannot create object inside the main method inside the interface..
+	
+		
+		
+		Rbi i = new Icici();
+	
+	}
+	
+	
+	
+
+}

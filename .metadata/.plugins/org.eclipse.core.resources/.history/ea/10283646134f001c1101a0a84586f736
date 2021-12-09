@@ -1,0 +1,42 @@
+package sampleProject;
+
+import java.util.Scanner;
+
+public class UserDefinedException extends Throwable {
+//throwable is the superclass for all exceptions
+	
+	public UserDefinedException(String msg) {
+		// TODO Auto-generated constructor stub
+		
+		super(msg);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the 10 char string");
+		str = sc.next();
+		
+		
+		while (true) 
+		{
+			try {
+				if (str.length() != 10) {
+					throw new UserDefinedException("String should be 10 char long");
+				} 
+				else 
+				{
+					System.out.println(str);
+					break;
+				}
+			}
+			catch (UserDefinedException e) 
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+		}
+	}
+}

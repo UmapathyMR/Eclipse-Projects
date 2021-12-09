@@ -1,0 +1,20 @@
+package sampleProject;
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String name = "Umapathy";
+		System.out.println(name);
+		System.out.println(name.length());//gives the length of string
+		System.out.println(name.charAt(0));//prints the 0th index of the string "umapathy"
+		System.out.println(name.indexOf("m"));//prints the index of letter m in the string
+		
+		
+		 String name1 =  new String("MR");
+		 System.out.println(name1);
+		 
+	}
+
+}

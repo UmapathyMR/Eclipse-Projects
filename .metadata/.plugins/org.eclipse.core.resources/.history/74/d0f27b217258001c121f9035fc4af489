@@ -1,0 +1,26 @@
+package com.newproject;
+
+public class TC001 extends BaseTest1
+
+{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		launch("chrome");
+		
+		navigate("https://www.bestbuy.com");
+		
+		driver.findElements(null);
+		driver.get(null);
+		driver.getWindowHandle();
+		driver.getTitle();
+		driver.getPageSource();
+		driver.navigate().forward();
+		driver.navigate().back();
+		driver.navigate().refresh();
+		driver.manage().deleteAllCookies();
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package sampleProject;
+
+public class ExceptionDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int nr=100, dr=0, result;
+		
+		
+		
+			
+		while () {
+			try {
+				result = nr / dr;
+				System.out.println(result);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+		}	
+		
+		//result = nr/dr;
+		//System.out.println(result);	
+		//the above two lines were selected and right clicked and 
+		//choose the surrounds with and select try catch block so we
+		//will get the above expression
+	}
+
+}

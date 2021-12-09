@@ -1,0 +1,17 @@
+package com.newproject;
+
+public class TC002 extends BaseTest1 
+{
+
+	public static void main(String[] args) throws Exception
+	{
+		// TODO Auto-generated method stub
+
+		launch("firefox");
+		
+		navigate("https://www.bestbuy.com");
+		
+		
+	}
+
+}

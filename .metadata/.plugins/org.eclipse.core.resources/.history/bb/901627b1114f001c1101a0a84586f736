@@ -1,0 +1,25 @@
+package sampleProject;
+
+import java.util.Scanner;
+
+public class UserDefinedException extends Throwable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str = null;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the 10 char string");
+		str = sc.next();
+		
+		try {
+			if (str.length()!=10);
+			{
+			throw new UserDefinedException();
+			}
+		} catch (UserDefinedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

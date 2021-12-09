@@ -1,0 +1,17 @@
+package sampleProject;
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String name = "Umapathy";
+		System.out.println(name);
+		System.out.println(name.lastIndexOf("Umapathy"));
+		
+		 String name1 =  new String("MR");
+		 System.out.println(name1);
+		 
+	}
+
+}

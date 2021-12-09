@@ -1,0 +1,65 @@
+package com.newproject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class TC002 extends BaseTest1 
+{
+
+	public static void main(String[] args) throws Exception
+	{
+		// TODO Auto-generated method stub
+
+		launch("chrome");
+		
+		navigate("https://www.amazon.ca");
+		
+		WebElement id = driver.findElement(By.id("twotabsearchtextbox"));
+		
+		id.sendKeys("toys");
+		
+		Thread.sleep(5000);
+		
+		WebElement clicksearch = driver.findElement(By.id("nav-search-submit-button"));
+		
+		clicksearch.click();
+		
+		Thread.sleep(5000);
+		
+		id.clear();
+		
+		driver.findElement(By.name("field-keywords")).sendKeys("car");
+		
+		WebElement clicksearch1 = driver.findElement(By.id("nav-search-submit-button"));
+		
+		clicksearch1.click();
+		
+		Thread.sleep(5000);
+		
+		
+		
+		id.clear();
+		
+		driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
+		
+		
+		id.sendKeys("kids toys");
+		
+		Thread.sleep(5000);
+		
+		id.clear();
+		
+		
+		
+		 //boolean iddis = id.isDisplayed();
+		 //System.out.println(iddis);
+		
+		//boolean idena = id.isEnabled();
+		//System.out.println(idena);
+		
+		 //boolean idsel = id.isSelected();
+		 //System.out.println(idsel);
+		
+	}
+
+}

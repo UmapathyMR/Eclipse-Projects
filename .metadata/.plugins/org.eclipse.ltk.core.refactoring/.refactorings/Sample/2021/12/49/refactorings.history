@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;sampleProject.OpenGoogle&apos; to &apos;BrowerLaunching&apos;&#x0D;&#x0A;- Original project: &apos;Sample&apos;&#x0D;&#x0A;- Original element: &apos;sampleProject.OpenGoogle&apos;&#x0D;&#x0A;- Renamed element: &apos;sampleProject.BrowerLaunching&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;OpenGoogle&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;sampleProject{OpenGoogle.java[OpenGoogle" matchStrategy="1" name="BrowerLaunching" qualified="false" references="true" similarDeclarations="false" stamp="1638660642371" textual="false" version="1.0"/>
+</session>

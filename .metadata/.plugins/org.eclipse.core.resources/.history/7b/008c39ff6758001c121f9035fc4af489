@@ -1,0 +1,51 @@
+package com.newproject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class BaseTest1 
+{
+
+	public static WebDriver driver;
+	
+	public static void launch(String browser) 
+	{
+		if (browser.equals("chrome"))
+		{
+	
+		//System.setProperty("webdriver.chrome.driver", "C:\\Uma\\Webdriver\\chromedriver_win32\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			
+		//driver.get("https://www.amazon.com");//opens the browser with this specified url
+		
+		
+		driver.manage().window().maximize();//maximizes the browser
+		//driver.quit();//closes the browser
+		}
+		
+		else if (browser.equals("firefox"))
+		{
+		
+			System.setProperty("webdriver.gecko.driver", "C:\\Uma\\Webdriver\\chromedriver_win32\\geckodriver.exe");
+			driver =  new FirefoxDriver();
+			//driver.navigate().to("https://www.amazon.ca");
+			driver.manage().window().maximize();//maximizes the browser
+		}
+	}	
+		
+		public static void navigate(String url)
+		
+	{
+		driver.get(url);
+			
+		
+		
+		
+	}
+}
